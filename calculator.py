@@ -10,15 +10,12 @@ def add_to_calculator(symbol):
     global result
     print(result)
     result+= str(symbol)
-    # print(result)
     text_result.delete(1.0, 'end')
     text_result.insert(1.0, result)
 def evaluate_calculation():
     global result
-    # print(result)
     try:
         result = str(eval(result))
-        # print(result)
         text_result.delete(1.0, 'end')
         text_result.insert(1.0, result)
     except:
